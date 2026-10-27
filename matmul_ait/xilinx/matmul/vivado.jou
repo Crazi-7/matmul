@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Oct  5 14:57:48 2026
+# Process ID: 85048
+# Current directory: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul
+# Command line: vivado
+# Log file: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/vivado.log
+# Journal file: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/vivado.jou
+# Running On: crazo, OS: Linux, CPU Frequency: 4370.104 MHz, CPU Physical cores: 6, Host memory: 16700 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.srcs/sources_1/bd/matmul_design/matmul_design.bd}
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_intf_nets inStream_2] [get_bd_intf_nets matmulBlock_0_outStream] [get_bd_intf_nets matmulBlock_0_memport] [get_bd_cells matmulBlock_0]

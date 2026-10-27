@@ -1,0 +1,660 @@
+
+*** Running vivado
+    with args -log bsc_axiu_addrInterleaver.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source bsc_axiu_addrInterleaver.tcl -notrace -init
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vivado.tcl -notrace
+0 Beta devices matching pattern found, 0 enabled.
+enable_beta_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1332.496 ; gain = 0.027 ; free physical = 4041 ; free virtual = 6649
+source bsc_axiu_addrInterleaver.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/HLS'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Command: link_design -top bsc_axiu_addrInterleaver -part xcu280-fsvh2892-2L-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2670.184 ; gain = 0.000 ; free physical = 2753 ; free virtual = 5361
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/create_pblocks.xdc]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/create_pblocks.xdc]
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/basic_constraints.xdc]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/basic_constraints.xdc]
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc]
+WARNING: [Vivado 12-180] No cells matched 'Hardware_Runtime'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:4]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:4]
+WARNING: [Vivado 12-180] No cells matched 'bridge_to_host'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:8]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:8]
+WARNING: [Vivado 12-180] No cells matched '.*master_Inter(_[0-9]*)*'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:12]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:12]
+WARNING: [Vivado 12-180] No cells matched 'bitinfo'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:16]
+WARNING: [Vivado 12-180] No cells matched 'bitInfo_BRAM_Ctrl'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:16]
+WARNING: [Vivado 12-180] No cells matched 'managed_reset'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:16]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:16]
+WARNING: [Vivado 12-180] No cells matched '.*/bridge_to_host/memory/DDR_0'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:24]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:24]
+WARNING: [Vivado 12-180] No cells matched '.*/bridge_to_host/memory/DDR_1'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:27]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:27]
+WARNING: [Vivado 12-180] No cells matched '.*slave_Inter(_[0-9]*)*'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:31]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:31]
+CRITICAL WARNING: [Common 17-165] Too many positional options when parsing '*/QDMA/QDMA/inst/pcie4c_ip_i', please type 'get_cells -help' for usage info. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:36]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc]
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/bitstream.xdc]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/bitstream.xdc]
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HBM_CATTRIP'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HBM_CATTRIP'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HBM_CATTRIP'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: matmul_design_DDR_0
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: matmul_design_DDR_1
+Generating merged BMM file for the design top 'bsc_axiu_addrInterleaver'...
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: bd_8384
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: bd_ce84
+WARNING: [Memdata 28-79] No processor module instance paths found in the source hierarchy. Please make sure that the source hierarchy is correctly established for the current 'top' module and the processor modules are part of this hierarchy.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2929.453 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5161
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 64 instances
+
+11 Infos, 27 Warnings, 21 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2929.453 ; gain = 1596.957 ; free physical = 2552 ; free virtual = 5161
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu280'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2982.215 ; gain = 52.762 ; free physical = 2528 ; free virtual = 5138
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3281.902 ; gain = 299.688 ; free physical = 2340 ; free virtual = 4954
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+Phase 1 Initialization | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+Phase 2 Timer Update And Timing Data Collection | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+Retarget | Checksum: 13b2d539a
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+Constant propagation | Checksum: 13b2d539a
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3587.707 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+Sweep | Checksum: 13b2d539a
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3619.723 ; gain = 32.016 ; free physical = 2033 ; free virtual = 4648
+BUFG optimization | Checksum: 13b2d539a
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3619.723 ; gain = 32.016 ; free physical = 2033 ; free virtual = 4648
+Shift Register Optimization | Checksum: 13b2d539a
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3619.723 ; gain = 32.016 ; free physical = 2033 ; free virtual = 4648
+Post Processing Netlist | Checksum: 13b2d539a
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3619.723 ; gain = 32.016 ; free physical = 2033 ; free virtual = 4648
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.723 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3619.723 ; gain = 32.016 ; free physical = 2033 ; free virtual = 4648
+Phase 9 Finalization | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3619.723 ; gain = 32.016 ; free physical = 2033 ; free virtual = 4648
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3619.723 ; gain = 32.016 ; free physical = 2033 ; free virtual = 4648
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.723 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3619.723 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.723 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.723 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+Ending Netlist Obfuscation Task | Checksum: 13b2d539a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.723 ; gain = 0.000 ; free physical = 2033 ; free virtual = 4648
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 27 Warnings, 21 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [runtcl-4] Executing : report_drc -file bsc_axiu_addrInterleaver_drc_opted.rpt -pb bsc_axiu_addrInterleaver_drc_opted.pb -rpx bsc_axiu_addrInterleaver_drc_opted.rpx
+Command: report_drc -file bsc_axiu_addrInterleaver_drc_opted.rpt -pb bsc_axiu_addrInterleaver_drc_opted.pb -rpx bsc_axiu_addrInterleaver_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3735.582 ; gain = 0.000 ; free physical = 1928 ; free virtual = 4544
+INFO: [Common 17-1381] The checkpoint '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu280'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3791.609 ; gain = 0.000 ; free physical = 1914 ; free virtual = 4529
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 9b445d40
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3791.609 ; gain = 0.000 ; free physical = 1914 ; free virtual = 4529
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3791.609 ; gain = 0.000 ; free physical = 1914 ; free virtual = 4529
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: cad0dc34
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3791.609 ; gain = 0.000 ; free physical = 1900 ; free virtual = 4531
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 14e924b04
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 4523.445 ; gain = 731.836 ; free physical = 1152 ; free virtual = 3813
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14e924b04
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 4523.445 ; gain = 731.836 ; free physical = 1152 ; free virtual = 3814
+Phase 1 Placer Initialization | Checksum: 14e924b04
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 4523.445 ; gain = 731.836 ; free physical = 1152 ; free virtual = 3814
+
+Phase 2 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1152 ; free virtual = 3814
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 4523.445 ; gain = 731.836 ; free physical = 1152 ; free virtual = 3814
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: cad0dc34
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 4523.445 ; gain = 731.836 ; free physical = 1152 ; free virtual = 3814
+47 Infos, 27 Warnings, 21 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 4523.445 ; gain = 787.863 ; free physical = 1152 ; free virtual = 3814
+INFO: [runtcl-4] Executing : report_io -file bsc_axiu_addrInterleaver_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.5 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1159 ; free virtual = 3822
+INFO: [runtcl-4] Executing : report_utilization -file bsc_axiu_addrInterleaver_utilization_placed.rpt -pb bsc_axiu_addrInterleaver_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file bsc_axiu_addrInterleaver_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1160 ; free virtual = 3823
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1160 ; free virtual = 3823
+Wrote PlaceDB: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1160 ; free virtual = 3823
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1160 ; free virtual = 3823
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1160 ; free virtual = 3824
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1160 ; free virtual = 3824
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1158 ; free virtual = 3824
+Write Physdb Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1158 ; free virtual = 3824
+INFO: [Common 17-1381] The checkpoint '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu280'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3819
+INFO: [Vivado_Tcl 4-235] No timing constraint found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 27 Warnings, 21 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3819
+Wrote PlaceDB: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3819
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3819
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3819
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1155 ; free virtual = 3819
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3820
+Write Physdb Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3820
+INFO: [Common 17-1381] The checkpoint '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu280'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 2f8c7ef4 ConstDB: 0 ShapeSum: 9b445d40 RouteDB: 0
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1143 ; free virtual = 3817
+Post Restoration Checksum: NetGraph: 3d7636a8 | NumContArr: 94a2f87e | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2576b2460
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4523.445 ; gain = 0.000 ; free physical = 1142 ; free virtual = 3817
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2576b2460
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4599.383 ; gain = 75.938 ; free physical = 1032 ; free virtual = 3708
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2576b2460
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4599.383 ; gain = 75.938 ; free physical = 1032 ; free virtual = 3708
+
+Phase 2.3 Global Clock Net Routing
+Phase 2.3 Global Clock Net Routing | Checksum: 2576b2460
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 5696.086 ; gain = 1172.641 ; free physical = 305 ; free virtual = 2665
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 64
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 64
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2576b2460
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 240 ; free virtual = 2600
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2576b2460
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 240 ; free virtual = 2600
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 29ad8b0b2
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 241 ; free virtual = 2602
+Phase 3 Initial Routing | Checksum: 29ad8b0b2
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 241 ; free virtual = 2602
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 241 ; free virtual = 2602
+Phase 4 Rip-up And Reroute | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 241 ; free virtual = 2602
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 241 ; free virtual = 2602
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 241 ; free virtual = 2602
+Phase 6 Post Hold Fix | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 241 ; free virtual = 2602
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00874507 %
+  Global Horizontal Routing Utilization  = 0.000434764 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 22.5352%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 13.2701%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 1.92308%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 2.38095%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 239 ; free virtual = 2600
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 239 ; free virtual = 2600
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 239 ; free virtual = 2600
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 276d7c734
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 239 ; free virtual = 2600
+Skip laguna hold fix in PhysOpt in Router as non-negative WHS value: 1e+30 .
+Time taken to check if laguna hold fix is required (in secs): 0
+Skip PhysOpt in Router because non-negative WNS value: 1e+30 .
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 19fb09b7e
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 239 ; free virtual = 2600
+Ending Routing Task | Checksum: 19fb09b7e
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 239 ; free virtual = 2600
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+65 Infos, 27 Warnings, 21 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 5728.961 ; gain = 1205.516 ; free physical = 237 ; free virtual = 2599
+INFO: [runtcl-4] Executing : report_drc -file bsc_axiu_addrInterleaver_drc_routed.rpt -pb bsc_axiu_addrInterleaver_drc_routed.pb -rpx bsc_axiu_addrInterleaver_drc_routed.rpx
+Command: report_drc -file bsc_axiu_addrInterleaver_drc_routed.rpt -pb bsc_axiu_addrInterleaver_drc_routed.pb -rpx bsc_axiu_addrInterleaver_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file bsc_axiu_addrInterleaver_methodology_drc_routed.rpt -pb bsc_axiu_addrInterleaver_methodology_drc_routed.pb -rpx bsc_axiu_addrInterleaver_methodology_drc_routed.rpx
+Command: report_methodology -file bsc_axiu_addrInterleaver_methodology_drc_routed.rpt -pb bsc_axiu_addrInterleaver_methodology_drc_routed.pb -rpx bsc_axiu_addrInterleaver_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file bsc_axiu_addrInterleaver_power_routed.rpt -pb bsc_axiu_addrInterleaver_power_summary_routed.pb -rpx bsc_axiu_addrInterleaver_power_routed.rpx
+Command: report_power -file bsc_axiu_addrInterleaver_power_routed.rpt -pb bsc_axiu_addrInterleaver_power_summary_routed.pb -rpx bsc_axiu_addrInterleaver_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+75 Infos, 28 Warnings, 21 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 230 ; free virtual = 2600
+INFO: [runtcl-4] Executing : report_route_status -file bsc_axiu_addrInterleaver_route_status.rpt -pb bsc_axiu_addrInterleaver_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file bsc_axiu_addrInterleaver_timing_summary_routed.rpt -pb bsc_axiu_addrInterleaver_timing_summary_routed.pb -rpx bsc_axiu_addrInterleaver_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file bsc_axiu_addrInterleaver_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file bsc_axiu_addrInterleaver_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 219 ; free virtual = 2593
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file bsc_axiu_addrInterleaver_bus_skew_routed.rpt -pb bsc_axiu_addrInterleaver_bus_skew_routed.pb -rpx bsc_axiu_addrInterleaver_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 222 ; free virtual = 2597
+Wrote PlaceDB: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 223 ; free virtual = 2597
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 223 ; free virtual = 2597
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 222 ; free virtual = 2597
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 222 ; free virtual = 2597
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 219 ; free virtual = 2596
+Write Physdb Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5817.004 ; gain = 0.000 ; free physical = 219 ; free virtual = 2596
+INFO: [Common 17-1381] The checkpoint '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 15:04:25 2026...
+
+*** Running vivado
+    with args -log bsc_axiu_addrInterleaver.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source bsc_axiu_addrInterleaver.tcl -notrace -init
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vivado.tcl -notrace
+0 Beta devices matching pattern found, 0 enabled.
+enable_beta_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1332.496 ; gain = 0.027 ; free physical = 4373 ; free virtual = 6840
+source bsc_axiu_addrInterleaver.tcl -notrace
+Command: open_checkpoint bsc_axiu_addrInterleaver_routed.dcp
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.137 ; gain = 0.000 ; free physical = 3046 ; free virtual = 5537
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2757.762 ; gain = 0.000 ; free physical = 2942 ; free virtual = 5433
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Read Physdb Files: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Restored from archive | CPU: 0.070000 secs | Memory: 1.248169 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3286.918 ; gain = 21.812 ; free physical = 2552 ; free virtual = 5043
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3534.590 ; gain = 0.000 ; free physical = 2300 ; free virtual = 4791
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 64 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.2 (64-bit) build 4029153
+open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3534.625 ; gain = 2202.129 ; free physical = 2292 ; free virtual = 4783
+Command: write_bitstream -force bsc_axiu_addrInterleaver.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu280'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 128 out of 128 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: in_addr[63:0], and out_addr[63:0].
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 128 out of 128 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: in_addr[63:0], and out_addr[63:0].
+INFO: [Vivado 12-3199] DRC finished with 2 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+write_bitstream: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 3827.184 ; gain = 276.586 ; free physical = 2140 ; free virtual = 4631
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 15:05:49 2026...

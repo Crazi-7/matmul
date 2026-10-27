@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 35,
+    "calls": "",
+    "file": "matmulBlock_hls_automatic_clang.cpp",
+    "fileloc": 56,
+    "instructions": 1090,
+    "loads": {
+      "G": 163,
+      "L": 4
+    },
+    "name": "matmulBlock_wrapper",
+    "stores": {
+      "G": 117,
+      "L": 25
+    },
+    "total_instructions": 1114
+  }
+}

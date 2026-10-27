@@ -1,0 +1,278 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Oct  5 15:00:03 2026
+# Process ID: 86942
+# Current directory: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/synth_1
+# Command line: vivado -log bsc_axiu_addrInterleaver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bsc_axiu_addrInterleaver.tcl -init
+# Log file: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/synth_1/bsc_axiu_addrInterleaver.vds
+# Journal file: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/synth_1/vivado.jou
+# Running On: crazo, OS: Linux, CPU Frequency: 4399.805 MHz, CPU Physical cores: 6, Host memory: 16700 MB
+#-----------------------------------------------------------
+source vivado.tcl -notrace
+0 Beta devices matching pattern found, 0 enabled.
+enable_beta_device: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1328.078 ; gain = 62.230 ; free physical = 259 ; free virtual = 5315
+source bsc_axiu_addrInterleaver.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/HLS'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top bsc_axiu_addrInterleaver -part xcu280-fsvh2892-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 87181
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 3067.449 ; gain = 397.715 ; free physical = 326 ; free virtual = 3294
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bsc_axiu_addrInterleaver' [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.srcs/sources_1/imports/IPs/bsc_axiu_addrInterleaver.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'bsc_axiu_addrInterleaver' (0#1) [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.srcs/sources_1/imports/IPs/bsc_axiu_addrInterleaver.v:33]
+WARNING: [Synth 8-3330] design bsc_axiu_addrInterleaver has an empty top module
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 3147.418 ; gain = 477.684 ; free physical = 207 ; free virtual = 3179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 3159.293 ; gain = 489.559 ; free physical = 203 ; free virtual = 3175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 3159.293 ; gain = 489.559 ; free physical = 203 ; free virtual = 3175
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3159.293 ; gain = 0.000 ; free physical = 203 ; free virtual = 3175
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/create_pblocks.xdc]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/create_pblocks.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/create_pblocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bsc_axiu_addrInterleaver_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bsc_axiu_addrInterleaver_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/basic_constraints.xdc]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/basic_constraints.xdc]
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc]
+WARNING: [Vivado 12-180] No cells matched 'Hardware_Runtime'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:4]
+WARNING: [Vivado 12-180] No cells matched 'bridge_to_host'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:8]
+WARNING: [Vivado 12-180] No cells matched '.*master_Inter(_[0-9]*)*'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:12]
+WARNING: [Vivado 12-180] No cells matched 'bitinfo'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:16]
+WARNING: [Vivado 12-180] No cells matched 'bitInfo_BRAM_Ctrl'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:16]
+WARNING: [Vivado 12-180] No cells matched 'managed_reset'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:16]
+WARNING: [Vivado 12-180] No cells matched '.*/bridge_to_host/memory/DDR_0'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:24]
+WARNING: [Vivado 12-180] No cells matched '.*/bridge_to_host/memory/DDR_1'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:27]
+WARNING: [Vivado 12-180] No cells matched '.*slave_Inter(_[0-9]*)*'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:31]
+CRITICAL WARNING: [Common 17-165] Too many positional options when parsing '*/QDMA/QDMA/inst/pcie4c_ip_i', please type 'get_cells -help' for usage info. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc:36]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/board_static.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bsc_axiu_addrInterleaver_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bsc_axiu_addrInterleaver_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/bitstream.xdc]
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/bitstream.xdc]
+Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk0_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_n'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk1_clk_p'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HBM_CATTRIP'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HBM_CATTRIP'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HBM_CATTRIP'. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/board/constraints/ports.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3246.324 ; gain = 0.000 ; free physical = 269 ; free virtual = 3153
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3246.359 ; gain = 0.000 ; free physical = 267 ; free virtual = 3151
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 3246.359 ; gain = 576.625 ; free physical = 265 ; free virtual = 3149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 3246.359 ; gain = 576.625 ; free physical = 264 ; free virtual = 3150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 3246.359 ; gain = 576.625 ; free physical = 264 ; free virtual = 3150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 3246.359 ; gain = 576.625 ; free physical = 263 ; free virtual = 3149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design bsc_axiu_addrInterleaver has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 3246.359 ; gain = 576.625 ; free physical = 259 ; free virtual = 3149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 3590.129 ; gain = 920.395 ; free physical = 169 ; free virtual = 2811
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 3590.129 ; gain = 920.395 ; free physical = 175 ; free virtual = 2812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 3599.145 ; gain = 929.410 ; free physical = 167 ; free virtual = 2790
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.988 ; gain = 945.254 ; free physical = 294 ; free virtual = 2785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.988 ; gain = 945.254 ; free physical = 293 ; free virtual = 2784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.988 ; gain = 945.254 ; free physical = 294 ; free virtual = 2786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.988 ; gain = 945.254 ; free physical = 292 ; free virtual = 2783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.988 ; gain = 945.254 ; free physical = 293 ; free virtual = 2784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.988 ; gain = 945.254 ; free physical = 292 ; free virtual = 2784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |IBUF |    64|
+|2     |OBUF |    64|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.988 ; gain = 945.254 ; free physical = 294 ; free virtual = 2785
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 3614.988 ; gain = 858.188 ; free physical = 294 ; free virtual = 2785
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 3614.996 ; gain = 945.254 ; free physical = 294 ; free virtual = 2785
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3628.926 ; gain = 0.000 ; free physical = 278 ; free virtual = 2770
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3682.215 ; gain = 0.000 ; free physical = 474 ; free virtual = 2977
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 64 instances
+
+Synth Design complete | Checksum: 9fe8f65a
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 25 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:43 . Memory (MB): peak = 3682.250 ; gain = 2354.172 ; free physical = 473 ; free virtual = 2976
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3060.404; main = 2815.566; forked = 321.890
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4578.742; main = 3682.219; forked = 979.594
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3682.250 ; gain = 0.000 ; free physical = 472 ; free virtual = 2975
+INFO: [Common 17-1381] The checkpoint '/home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/synth_1/bsc_axiu_addrInterleaver.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bsc_axiu_addrInterleaver_utilization_synth.rpt -pb bsc_axiu_addrInterleaver_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 15:01:58 2026...

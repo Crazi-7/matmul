@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Oct  5 15:05:16 2026
+# Process ID: 89221
+# Current directory: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1
+# Command line: vivado -log bsc_axiu_addrInterleaver.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bsc_axiu_addrInterleaver.tcl -notrace -init
+# Log file: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/bsc_axiu_addrInterleaver.vdi
+# Journal file: /home/crazi/Documents/Ompss/matmul280/matmul/matmul_ait/xilinx/matmul/matmul.runs/impl_1/vivado.jou
+# Running On: crazo, OS: Linux, CPU Frequency: 4484.653 MHz, CPU Physical cores: 6, Host memory: 16700 MB
+#-----------------------------------------------------------
+source vivado.tcl -notrace
+0 Beta devices matching pattern found, 0 enabled.
+enable_beta_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1332.496 ; gain = 0.027 ; free physical = 4373 ; free virtual = 6840
+source bsc_axiu_addrInterleaver.tcl -notrace
+Command: open_checkpoint bsc_axiu_addrInterleaver_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1332.496 ; gain = 0.000 ; free physical = 4373 ; free virtual = 6840
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.137 ; gain = 0.000 ; free physical = 3046 ; free virtual = 5537
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2757.762 ; gain = 0.000 ; free physical = 2942 ; free virtual = 5433
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Read Physdb Files: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3286.918 ; gain = 0.000 ; free physical = 2552 ; free virtual = 5043
+Restored from archive | CPU: 0.070000 secs | Memory: 1.248169 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3286.918 ; gain = 21.812 ; free physical = 2552 ; free virtual = 5043
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3534.590 ; gain = 0.000 ; free physical = 2300 ; free virtual = 4791
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 64 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.2 (64-bit) build 4029153
+open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3534.625 ; gain = 2202.129 ; free physical = 2292 ; free virtual = 4783
+Command: write_bitstream -force bsc_axiu_addrInterleaver.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu280'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 128 out of 128 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: in_addr[63:0], and out_addr[63:0].
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 128 out of 128 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: in_addr[63:0], and out_addr[63:0].
+INFO: [Vivado 12-3199] DRC finished with 2 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+write_bitstream: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 3827.184 ; gain = 276.586 ; free physical = 2140 ; free virtual = 4631
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 15:05:49 2026...
